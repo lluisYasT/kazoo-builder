@@ -17,7 +17,6 @@ LABEL   app.kazoo.configs.version=$KAZOO_CONFIGS_VERSION
 LABEL   app.kazoo.sounds.version=$KAZOO_SOUNDS_VERSION
 LABEL   app.kazoo.core.version=$KAZOO_VERSION
 
-COPY    patches /tmp/patches
 COPY    build-kazoo.sh /
 
 WORKDIR $HOME

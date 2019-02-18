@@ -13,9 +13,6 @@ pushd $_
     log::m-info "Compiling kazoo v$KAZOO_VERSION ..."
 	git clone -b $KAZOO_VERSION --single-branch --depth 1 https://github.com/2600Hz/kazoo kazoo
     pushd $_
-        log::m-info "Applying patches ..."
-        mv /tmp/patches .
-        git apply patches/*.diff
 
 		make
 		make build-release
